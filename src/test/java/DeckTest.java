@@ -31,14 +31,12 @@ public class DeckTest {
         assertEquals(52, deck.countCards());
     }
 
-    //to test whether the deck can shuffle cards
-//    @Test
-//    public void firstCardIsNotAceOfHearts() {
-//        deck.shuffle();
-//        assertEquals(something )
-//        deck.shuffle()
-//        assertEquals(something different)
-//    }
+@Test
+    public void canDealCardFromDeck() {
+    deck.add52Cards();
+    deck.dealCard();
+    assertEquals(51, deck.countCards());
+}
 
 
 }
